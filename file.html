@@ -14,17 +14,19 @@
    <div class="container">
     <nav>
       <img src="images/logo.png"  class="logo">
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-x" onclick="closemenu()"></i>
+    </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
     <div class="header-text">
         <p>Full Stack Developer</p>
-        <h1>Hi, I am <span>Carolina</span><br>from US</h1>
+        <h1>Carolina <span>Vargas</span><br>O.</h1>
     </div>
    </div>
 </div>
@@ -33,7 +35,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png">
+                <img src="images/person.jpg">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -47,21 +49,21 @@
             <div class="tab-contents active-tab" id="skills">
                 <ul>
                     <li><span>UI/UX</span><br>stack developer</li>
-                    <li><span>Web development</span><br>web app development</li>
-                    <li><span>app development</span><br>building android apps</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>App Development</span><br>Building Android Apps</li>
                 </ul>
             </div>
             <div class="tab-contents" id="experience">
                 <ul>
                     <li><span>2017-2020</span><br>Restaurant Manager </li>
-                    <li><span>2008-2016</span><br>Customer Service HP</li>
+                    <li><span>2008-2016</span><br>Customer Service Representative HP</li>
                 </ul>
             </div>
             <div class="tab-contents" id="education">
                 <ul>
                     <li><span>Liberal Studies</span><br>Union County College</li>
-                    <li><span>Technical Support Fundamentals</span><br>Google-coursera</li>
-                    <li><span>excel</span><br>Computer Institute San Jose</li>
+                    <li><span>Technical Support Fundamentals</span><br>Google-Coursera</li>
+                    <li><span>Excel</span><br>Computer Institute San Jose</li>
                 </ul>
             </div>
             </div>
@@ -71,21 +73,24 @@
  <!------------SERVICES------->
 <div id="services">
     <div class="container">
+        
         <h1 class="sub-title">My Services</h1>
+        
         <div class="services-list">
+            
             <div>
-                <i class="fa-thin fa-filter"></i>
+                <i class="fa fa-pen-nib"></i>
               <h2>Web Design</h2>
               <p>Edward and Bella's relationship is jeopardized when three nomadic vampires—James, Victoria, and Laure</p>
               <br>
-              <a href="#">Learn more</a>  
+              <a href="#">Learn More</a>  
             </div>
             <div>
-                <i class="fa-solid fa-tricycle"></i>
-                <h2>app development</h2>
+                <i class="fa fa-browser"></i>
+                <h2>App Development</h2>
                 <p>Edward and Bella's relationship is jeopardized when three nomadic vampires—James, Victoria, and Laure</p>
                 <br>
-                <a href="#">Learn more</a>  
+                <a href="#">Learn More</a>  
               </div>
               
         </div> 
@@ -97,31 +102,60 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-               <img src="images/work-1.png">
-               <div class="layer">
-                <h3>Social Media App</h3>
-                <p>The app connects you to the talented people arpund the world. Download it from play store</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div> 
-            <div class="work">
-            <img src="images/work-2.png">
-            <div class="layer">
-                <h3>cellphone App</h3>
-                <p>The app connects you to the talented people arpund the world. Download it from play store</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>  
-            <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work-1.png">
                 <div class="layer">
-                    <h3>Online Store App</h3>
-                    <p>The app connects you to the talented people arpund the world. Download it from play store</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div> 
-        
+                    <h1>Social Media App</h1>
+                <p>jfjfjjfjfjfjfjjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjjfjf</p>
+                <a href="#"><i class="fa-thin fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+              <div class="work">
+              <img src="images/work-2.png">
+              <div class="layer">
+                <h1>Online App</h1>
+                <p>jfjfjjfjfjfjfjjfjfjfjfjfj
+                    fjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjjfjf</p>
+                <a href="#"><i class="fa-thin fa-rocket-launch"></i></i></a>
+              </div>
+              </div>
+              <div class="work">
+              <img src="images/work-3.png">
+              <div class="layer">
+                <h1>Cellphone App</h1>
+                <p>jfjfjjfjfjfjfjjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjjfjf</p>
+                <a href="#"><i class="fa-thin fa-arrow-up-right-from-square"></i></a>
+              </div>   
              </div>
         </div>
+        <a href="#" class="btn">See More</a>
     </div>
-
+</div>
+<!---------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-thin fa-envelope"></i>contact@example.com</p>
+                <p><i class="fa-duotone fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"></a><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""></a><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""></a><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""></a><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+               <a href="" class="btn btn2">Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
   <script>
 
@@ -139,6 +173,15 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
   </script>
-    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
