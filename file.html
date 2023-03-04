@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/345ac66817.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
-  <header>
+
    <div class="container">
     <nav>
       <img src="images/logo.png"  class="logo">
@@ -27,7 +28,7 @@
     </div>
    </div>
 </div>
-
+<!-------ABOUT------>
 <div id="about">
     <div class="container">
         <div class="row">
@@ -40,8 +41,8 @@
         
                 <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                <p class="tab-links"onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
                 <ul>
@@ -67,11 +68,76 @@
         </div>
     </div>
 </div>
-  </header>
+ <!------------SERVICES------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-thin fa-filter"></i>
+              <h2>Web Design</h2>
+              <p>Edward and Bella's relationship is jeopardized when three nomadic vampires—James, Victoria, and Laure</p>
+              <br>
+              <a href="#">Learn more</a>  
+            </div>
+            <div>
+                <i class="fa-solid fa-tricycle"></i>
+                <h2>app development</h2>
+                <p>Edward and Bella's relationship is jeopardized when three nomadic vampires—James, Victoria, and Laure</p>
+                <br>
+                <a href="#">Learn more</a>  
+              </div>
+              
+        </div> 
+    </div>
+</div>
+<!-------portfolio------>
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+               <img src="images/work-1.png">
+               <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people arpund the world. Download it from play store</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div> 
+            <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+                <h3>cellphone App</h3>
+                <p>The app connects you to the talented people arpund the world. Download it from play store</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>  
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Store App</h3>
+                    <p>The app connects you to the talented people arpund the world. Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div> 
+        
+             </div>
+        </div>
+    </div>
 
+</div>
   <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+           tablink.classList.remove("active-link"); 
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
   </script>
     
 </body>
